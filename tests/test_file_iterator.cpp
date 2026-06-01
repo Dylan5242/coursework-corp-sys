@@ -4,6 +4,7 @@
 
 using namespace docgen;
 
+// Unit tests for FileIterator collection state and traversal behavior.
 TEST_CASE("FileIterator reports empty collection", "[filesystem][iterator]") {
     FileIterator iterator({});
     REQUIRE(iterator.empty());

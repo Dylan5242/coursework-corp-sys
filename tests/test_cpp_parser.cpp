@@ -6,6 +6,7 @@
 
 using namespace docgen;
 
+// Unit tests for extracting documented C++ entities from source and header files.
 TEST_CASE("CppParser extracts documented function after slash comment", "[parser][cpp]") {
     TempDirectory temp;
     const auto file = temp.writeFile("math.cpp", "/// Adds two numbers\nint add(int a, int b);\n");

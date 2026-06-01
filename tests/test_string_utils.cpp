@@ -4,6 +4,7 @@
 
 using namespace docgen;
 
+// Unit tests for small string helpers used by parsers and HTML generation.
 TEST_CASE("trim removes leading and trailing spaces", "[utils][trim]") {
     REQUIRE(utils::trim("  hello  ") == "hello");
 }

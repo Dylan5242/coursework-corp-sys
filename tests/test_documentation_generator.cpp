@@ -9,6 +9,7 @@
 
 using namespace docgen;
 
+// End-to-end unit tests for scanning, parsing, generation, and progress events.
 class RecordingObserver final : public IGenerationObserver {
 public:
     void onProgress(const std::string& message) override {

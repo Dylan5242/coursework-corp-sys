@@ -6,6 +6,7 @@
 
 using namespace docgen;
 
+// Unit tests for observer registration and notification delivery.
 class CollectingObserver final : public IGenerationObserver {
 public:
     void onProgress(const std::string& message) override {

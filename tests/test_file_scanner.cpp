@@ -9,6 +9,7 @@
 
 using namespace docgen;
 
+// Unit tests for file discovery, extension filtering, and path ordering.
 namespace {
 std::vector<std::string> fileNames(const std::vector<std::filesystem::path>& paths) {
     std::vector<std::string> names;

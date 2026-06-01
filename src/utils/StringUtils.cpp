@@ -62,12 +62,12 @@ std::string removeCommentMarkers(const std::string& comment) {
             cleaned = trim(cleaned.substr(2));
         }
 
-        if (cleaned.rfind("*", 0) == 0) {
-            cleaned = trim(cleaned.substr(1));
-        }
-
         if (cleaned.size() >= 2 && cleaned.substr(cleaned.size() - 2) == "*/") {
             cleaned = trim(cleaned.substr(0, cleaned.size() - 2));
+        }
+
+        if (cleaned.rfind("*", 0) == 0) {
+            cleaned = trim(cleaned.substr(1));
         }
 
         if (!cleaned.empty()) {

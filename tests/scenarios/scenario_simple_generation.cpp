@@ -4,6 +4,7 @@
 #include <filesystem>
 #include <iostream>
 
+// Scenario test for the simple documentation generation workflow.
 int main() {
     ScenarioTempDirectory temp("docgen_scenario_simple");
     temp.writeFile("src/math.cpp", "/// Adds two numbers\nint add(int a, int b);\n");

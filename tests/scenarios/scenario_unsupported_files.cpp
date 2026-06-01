@@ -4,6 +4,7 @@
 #include <iostream>
 #include <stdexcept>
 
+// Scenario test for ignoring unsupported files during documentation generation.
 int main() {
     ScenarioTempDirectory temp("docgen_scenario_unsupported");
     temp.writeFile("README.md", "# Not a C++ source file\n");

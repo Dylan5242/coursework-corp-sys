@@ -4,6 +4,7 @@
 #include <iostream>
 #include <stdexcept>
 
+// Scenario test for reporting an empty project as an expected failure case.
 int main() {
     ScenarioTempDirectory temp("docgen_scenario_empty");
 

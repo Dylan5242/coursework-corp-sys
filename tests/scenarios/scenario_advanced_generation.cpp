@@ -4,6 +4,7 @@
 #include <filesystem>
 #include <iostream>
 
+// Scenario test for advanced output with navigation and documented entities.
 int main() {
     ScenarioTempDirectory temp("docgen_scenario_advanced");
     temp.writeFile("include/api.h", "/// Main API class\nclass Api {};\n");

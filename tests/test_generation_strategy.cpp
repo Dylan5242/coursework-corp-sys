@@ -7,6 +7,7 @@
 
 using namespace docgen;
 
+// Unit tests for strategy selection and generated HTML output files.
 namespace {
 DocumentationModel sampleModel() {
     DocumentationModel model;

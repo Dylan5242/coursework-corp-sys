@@ -6,6 +6,7 @@
 
 using namespace docgen;
 
+// Unit tests for choosing the parser implementation by file extension.
 TEST_CASE("ParserFactory creates CppParser for cpp extension", "[parser][factory]") {
     auto parser = ParserFactory::createParser(".cpp");
     REQUIRE(parser != nullptr);

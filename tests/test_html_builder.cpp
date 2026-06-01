@@ -4,6 +4,7 @@
 
 using namespace docgen;
 
+// Unit tests for HTML structure, escaping, navigation, and entity rendering.
 TEST_CASE("HtmlBuilder creates document skeleton", "[generator][html_builder]") {
     HtmlBuilder builder;
     const auto html = builder.beginDocument("Title").endDocument().build();
